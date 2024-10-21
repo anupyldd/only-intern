@@ -44,9 +44,6 @@ $this->setFrameMode(true);
 					/>
 				<?php endif; ?>
 			</div>
-			<?if($arParams["DISPLAY_PICTURE"]!="N" && is_array($arItem["PREVIEW_PICTURE"])):?>
-				<div style="clear:both"></div>
-			<?endif?>
 			<div class="article-item__wrapper">
 				<?if($arParams["DISPLAY_NAME"]!="N" && $arItem["NAME"]):?>
 					<div class="article-item__title"><?= $arItem["NAME"] ?></div>
