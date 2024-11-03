@@ -38,6 +38,8 @@ $APPLICATION->IncludeComponent(
 <br />
 <?php
 endif;
+
+
 $APPLICATION->IncludeComponent(
 	"bitrix:news.list",
 	"",
