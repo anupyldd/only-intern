@@ -26,5 +26,3 @@ function dev_site_autoload($className)
 
 spl_autoload_register('dev_site_autoload');
 
-AddEventHandler("dev.site", "OnAfterIBlockElementAdd", ["Iblock", "clearOldLogs"]);
-AddEventHandler("dev.site", "OnAfterIBlockElementUpdate", ["Iblock", "clearOldLogs"]);
