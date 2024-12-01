@@ -2,7 +2,7 @@
 
 require __DIR__ . '/internal.php';
 
-$authUrl = "https://oauth.yandex.ru/authorize?response_type=code&client_id=" . CLIENT_ID . "&redirect_uri=" . urlencode(REDIRECT_URI);
+$authUrl = "https://oauth.yandex.ru/authorize?response_type=code&scope=cloud_api:disk&client_id=" . CLIENT_ID . "&redirect_uri=" . urlencode(REDIRECT_URI);
 ?>
 
 <!DOCTYPE html>

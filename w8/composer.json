@@ -2,7 +2,8 @@
     "require": {
         "arhitector/yandex": "dev-master",
         "nyholm/psr7": "^1.8",
-        "psr/http-factory": "^1.1"
+        "psr/http-factory": "^1.1",
+        "php-http/message-factory": "^1.1"
     },
     "config": {
         "allow-plugins": {
