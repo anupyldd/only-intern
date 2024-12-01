@@ -64,11 +64,17 @@ class phpdevorg_cprop extends CModule
 
     function InstallDB()
     {
-        return true;
+        RegisterModule($this->MODULE_ID);
+		RegisterModuleDependences("main", "OnUserTypeBuildList", $this->MODULE_ID, "CIBlockPropertyCProp", "GetUserTypeDescription");
+
+		return true;
     }
 
     function UnInstallDB()
     {
+        UnRegisterModuleDependences("main", "OnUserTypeBuildList", $this->MODULE_ID, "CIBlockPropertyCProp", "GetUserTypeDescription");
+		UnRegisterModule($this->MODULE_ID);
+
         return true;
     }
 
